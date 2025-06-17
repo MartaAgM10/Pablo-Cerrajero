@@ -75,7 +75,7 @@
   .navegador a:hover {
     background-color: #84566e; /* Color diferente al pasar el mouse */
   }
-  .navbar.navegador.nav-item.dropdown-menu{
+  .nav-item.dropdown-menu{
     text-decoration: none; /* Elimina subrayado de los enlaces */
     color: #fff;
     background-color:#5e4040;         
@@ -119,7 +119,7 @@
     justify-content: space-between;
     background: linear-gradient(145deg #ffffff,#e6f0ff);
     border-radius: 15px;
-    box-shadow: 0 8px 20px black(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     margin-bottom: 50px;  /* Espacio debajo de section */
   }
    /* TITULO DE SECCION*/
@@ -279,7 +279,7 @@
     transition: opacity 0.3s ease;
     z-index: 999;
    }
-   #modal-togle:checked ~ ,.modal{
+   #modal-togle:checked ~ .modal{
     visibility: visible;
     opacity:1;
    }
@@ -302,7 +302,7 @@
    }
    
    .modal-content li{
-    margin: bottom 0.5rem;
+    margin-bottom: 0.5rem;
     font-weight: 500;
    }
     .btncerrar{
@@ -466,7 +466,7 @@ textarea {
   .bi-facebook{
     color: rgb(80, 80, 209);
   }
-  @media (max-width:768){
+  @media (max-width:768px){
     .principal{
       flex-direction: column;
       text-align: center;
