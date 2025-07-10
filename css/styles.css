@@ -138,6 +138,7 @@ header {
 
 /* PARRAFO DE SECCION */
 .texto-principal {
+  display: flex;
   color: #d0d0d0;
   margin-bottom: 20px;
   text-align: justify; /* Justifica el texto */
@@ -542,13 +543,17 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  header{
+    flex-direction: column;
+  }
   .principal {
     flex-direction: column;
     text-align: center;
-    width: 50%;
+    width: 30%;
   }
   .navegador {
     flex-direction: column;
+    padding: 10px 0px;
     gap: 1rem;
   }
 }
@@ -556,6 +561,7 @@ footer p {
   .principal {
     flex-direction: column;
     text-align: center;
+    width: 30%;
 
   }
   .navegador {
