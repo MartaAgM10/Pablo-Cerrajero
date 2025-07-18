@@ -15,7 +15,7 @@
               <img class="logo-cerrajero" src="image/logoCerrajero.png" alt="Logo Cerrajero">
               <h2>Cerrajero Pablo</h2>
         </div>
-      <nav class="navbar navbar-expand-lg navbar-ligth bg-ligth">
+      <nav class="navbar-expand-lg navbar-ligth bg-ligth">
         <div class="navegador">
             <!--<a class="navbar-brand" href="#">Cerrajería</a>-->
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,23 +30,22 @@
                 <a class="nav-link" href="./pages/acercade.html">Acerca de</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="pages/galeria.html">Galería</a>
+                <a class="nav-link" href="./pages/galeria.html">Galería</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="pages/contacto.html">Contacto</a>
-                </li>
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Servicios
                   </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarNavDropdown">
-                    <li><a class="dropdown-item" href="pages/servicios.html#apertura">Apertura domiciliaria</a></li>
-                    <li><a class="dropdown-item" href="image/aperturaComercial.jpeg">Cerrajería comercial</a></li>
-                    <li><a class="dropdown-item" href="image/cerrajeriadeAutomotor.png">Cerrajería del automotor</a></li>
-                    <li><a class="dropdown-item" href="image/cambiodeCombinacion.png">Venta y reparación de cerraduras</a></li>
+                  <ul class="dropdown-menu" aria-labelledby="navbarNavDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./image/aperturasPuerta.jpeg">Apertura domiciliaria</a></li>
+                    <li><a class="dropdown-item" href="./image/aperturaComercial.jpeg">Cerrajería comercial</a></li>
+                    <li><a class="dropdown-item" href="./image/cerrajeriadeAutomotor.png">Cerrajería del automotor</a></li>
+                    <li><a class="dropdown-item" href="./image/cambiodeCombinacion.png">Venta y reparación de cerraduras</a></li>
                   </ul>
                 </li>
-              </ul>
+              </ul> 
          </div>
         </div>
        </div>
@@ -55,14 +54,13 @@
   <main class=" main-grid"> 
     <section class="principal">
         <div class="texto-principal">
-          <h2>ATENCION 24 hs</h2>
+          <h1>ATENCION 24 hs</h1>
           <p> Somos una empresa con 20 años de experiencia.<br>
           Nos dedicamos a ofrecer el mejor servicio de cerrajería. <br>Brindamos
-          asistencia a su hogar, comercio, industria o consorcio. <br>Ofremos el mejor servicio de cerrajería con garantia, calidad y
+          asistencia a su hogar, comercio, industria o consorcio. <br>Ofrecemos el mejor servicio de cerrajería con garantía, calidad y
           confiabilidad.<br>
           Presupuestos en domicilio sin cargo. <br>Seriedad, puntualidad y compromiso. <br>Por cualquier consulta, no dudes en contactarnos!.
           </p>
-          <label for="model-toggle" class="btn"> Nuestros servicios y galeria de imágenes</label>
         </div>
       <div class="img-container">
         <div class="image-caption">
@@ -94,37 +92,22 @@
     <div class="video-container">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Z_btmfZVLq8?si=6-SDoTPlK5LC7zJ5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-      <section class="contacto">
-        <h2>Envíe su consulta</h2>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Email </label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Deje su mensaje</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escriba su mensaje y responderemos a la brevedad"></textarea>
-          <input class="button" type="submit" value="Enviar">
-        </div>
-        </form>
+    
+        <section class="contacto">
+            <h2>Envíe su consulta</h2>
+            <form class="formulario">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email </label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Contáctenos</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escriba su mensaje aquí y responderemos a la brevedad"></textarea>
+                <input class="button" type="submit" value="Enviar">
+              </div>
+            </form>
         </section>
-         <!-- modal con lista de servicios-->
-        <input type="checkbox" id="modal-toggle" style="display: none;">
-        <div class="modal">
-          <div class="modal-content">
-            <h3>
-            Servicios disponibles
-            </h3>
-            <ul><!--lista de servicios-->
-              <li><img src="../image/llaveCasa.png" alt="Apertura domiciliaria" width="40"> Apertura domiciliariaApertura domiciliaria</li>
-              <li>Servicios en locales y consorcios</li>
-              <li>Cambio de combinaciones</li>
-              <li>Duplicado de llaves</li>
-              <li>Venta y reparación de cerraduras</li>
-              <li>Cerrajeria del automotor</li>
-            </ul>
-            <label for="modal-toggle" class="btnabrir">Ver servicios</label>
-          <label for="modal-toggle" class="btncerrar">Cerrar</label>
-        </div>  
+         
       </div>
     </main>
     <footer>
